@@ -38,7 +38,7 @@ I only put them together as a form of proof of concept.
 
 This is my first Android App made in Android Studio.
 
-My next step will be to set up static buttons and load the codes arbritrarily using a layout file and you can import into the app through the app rather that entering the code manually in the text boxes.
+My next step will be to set up static buttons and load the codes arbritrarily using a layout file that you can import into the app through the app rather that entering the code manually in the text boxes.
 
 I hope that the codes I was able to put together here can come in handy for you.
 
