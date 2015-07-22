@@ -13,6 +13,7 @@ You MUST pair your Bluetooth module with your Android phone before launching the
 There are two fields in the application that show up after connecting to your bluetooth module..
 
 1) Send HEX
+
 2) Send PRONTO
 
 The other buttons are for a hard coded Pronto Test code and to disconnect the bluetooth device from the phone.
