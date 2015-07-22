@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BT2IR</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_devices_list">Devices List</string>
+    <string name="enterPCode">Enter Pronto Code</string>
+    <string name="enterHCode">Enter Hex Code</string>
+    <string name="sndCode">Send</string>
+    <string name="btnDisc">Disconnect</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="paired_devices_btn">Paired Devices</string>
+    <string name="send_ir_over_bt">Send IR over Bluetooth</string>
+    <string name="ProntoTest">Pronto Test</string>
+
+</resources>
