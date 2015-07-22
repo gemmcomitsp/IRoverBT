@@ -22,9 +22,11 @@ The two text fields use totally DIFFERENT code formats.
 
 For 1, use the EasySender sketch on your Arduino. (Ken Shariff IRRemote Library - Also on Github)
 
-For 2, use the SendPronto sketch on your Arduino. (http://irdb.tk/send/)
+For 2, use the Send Pronto sketch on your Arduino. (http://irdb.tk/send/)
 
-For more details on the sketches, check out the originating sites. 
+**Note on sending using Pronto codes: You <b><i>MUST</B></i> put <b>SEND</b> before the code and <b>\n</b> after the code for it to work. Found that out the hard way.
+
+For more details on the sketches and how to use them with your project, check out the originating sites. 
 
 Sketches are located in the "Hardware - Schems and Sketches" folder.
 
@@ -42,4 +44,4 @@ I hope that the codes I was able to put together here can come in handy for you.
 
 Enjoy and thanks for looking in.
 
-- gemmcom -
+          gemmcom
