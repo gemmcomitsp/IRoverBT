@@ -143,7 +143,7 @@ public class BTsendIR extends ActionBarActivity {
         {
             try
             {
-                btSocket.getOutputStream().write("0000 0073 0000 000B 0040 0020 0020 0020 0020 0040 0040 0040 0020 0020 0040 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0CC8 /n".toString().getBytes());
+                btSocket.getOutputStream().write("SEND 0000 0073 0000 000B 0040 0020 0020 0020 0020 0040 0040 0040 0020 0020 0040 0020 0020 0020 0020 0020 0020 0020 0020 0020 0020 0CC8 /n".toString().getBytes());
             }
             catch (IOException e)
             {
