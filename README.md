@@ -1,10 +1,12 @@
 # IRoverBT
 
-This document was created to help with getting software and hardware together to facilitate sending IR codes using the PRONTO HEX format with an Arduino and a Bluetooth module like the HC-06.
+This document was created to help with getting software and hardware together to facilitate sending IR codes using the PRONTO HEX and the HEX format used in the IRRemote library.
 
-Compile the Android app using Android Studio/Gradle and export to your mobile.
+Hardware consists of an Arduino and a Bluetooth module like the HC-06.
 
-Support for Gingerbread and newer Android OSs
+Compile the Android software using Android Studio/Gradle and export to your mobile.
+
+Supports Gingerbread and newer Android OSs.
 
 Should only require/request Bluetooth permissions.
 
@@ -16,11 +18,11 @@ There are two fields in the application that show up after connecting to your bl
 
 2) Send PRONTO
 
-The other buttons are for a hard coded Pronto Test code and to disconnect the bluetooth device from the phone.
+The other buttons are for a hard coded Pronto Test code and to disconnect the bluetooth module from the android device.
 
 The two text fields use totally DIFFERENT code formats. 
 
-For 1, use the EasySender sketch on your Arduino. (Ken Shariff IRRemote Library - Also on Github)
+For 1, use the EasySender sketch on your Arduino. (Ken Shirriff IRRemote Library - Also on Github)
 
 For 2, use the Send Pronto sketch on your Arduino. (http://irdb.tk/send/)
 
