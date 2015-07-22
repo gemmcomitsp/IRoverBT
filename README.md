@@ -26,7 +26,7 @@ For 1, use the EasySender sketch on your Arduino. (Ken Shirriff IRRemote Library
 
 For 2, use the Send Pronto sketch on your Arduino. (http://irdb.tk/send/)
 
-**Note on sending using Pronto codes: You <b><i>MUST</B></i> put <b>SEND</b> before the code and <b>\n</b> after the code for it to work. Found that out the hard way.
+**Note on sending using Pronto codes: You <b><i>MUST</B></i> put <b>SEND</b> before the code and <b>\n</b> after the code for it to work. Found that out the hard way. Working on bypassing this requirement but this is the only way to get the codes to work for now. 
 
 For more details on the sketches and how to use them with your project, check out the originating sites. 
 
