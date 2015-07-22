@@ -21,6 +21,7 @@ The other buttons are for a hard coded Pronto Test code and to disconnect the bl
 The two text fields use totally DIFFERENT code formats. 
 
 For 1, use the EasySender sketch on your Arduino. (Ken Shariff IRRemote Library - Also on Github)
+
 For 2, use the SendPronto sketch on your Arduino. (http://irdb.tk/send/)
 
 For more details on the sketches, check out the originating sites. 
