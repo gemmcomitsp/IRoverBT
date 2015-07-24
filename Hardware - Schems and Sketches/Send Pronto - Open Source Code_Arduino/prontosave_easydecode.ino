@@ -67,7 +67,7 @@ unsigned long decodeHash(decode_results *results) {
 void setup()
 {
   Serial.begin(57600);
-  Serial.println("READY");
+  Serial.println("Ready to Send Pronto Code or Decode IR Signals");
   irrecv.enableIRIn(); // Start the receiver
 }
  
