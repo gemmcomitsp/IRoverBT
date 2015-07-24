@@ -4,9 +4,7 @@
 *Did a lot of testing and can confirm that the code works fine on Arduinos using 328P chips.
 *Both code sets came from online so I take no credit for all the hard work done on decompiling/interpreting the IR codes.
 *Changes were made to the IRremoteInt.h file = _GAP changed from 5000 to 7500
-*/
 
-/*
  * IRremote: IRrecvDump - dump details of IR codes with IRrecv
  * An IR detector/demodulator must be connected to the input RECV_PIN.
  * Version 0.1 July, 2009
@@ -20,6 +18,11 @@
  * Easy Decode is a small change to the original Dumdecode. for use and easier understanding.*
  */
   
+// Pronto Send sample:
+// SEND 0000 0067 0000 000d 0060 0018 0030 0018 0030 0018 0030 0018 0030 0018 0018 0018 0030 0018 0018 0018 0030 0018 0018 0018 0018 0018 0018 0018 0018 03de
+// No Spaces on the end. Must use NEWLINE
+// Codes are sent Using PIN D9
+
 
 #include <IRremote.h>
  
@@ -28,7 +31,7 @@
 // change in IRremoteInt.h:
 // #define _GAP 50000
  
-int RECV_PIN = 4;
+int RECV_PIN = 8;
 IRrecv irrecv(RECV_PIN);
 decode_results results;
  
@@ -159,9 +162,9 @@ void dump(decode_results *results) {
 #include <stdint.h>
 #include <avr/io.h>
 #define IR_PORT PORTB
-// #define IR_PIN PINB
-// #define IR_DDR DDRB
-// #define IR_BV _BV(1)
+#define IR_PIN PINB
+#define IR_DDR DDRB
+#define IR_BV _BV(1)
 #define IR_OCR OCR1A
 #define IR_TCCRnA TCCR1A
 #define IR_TCCRnB TCCR1B
@@ -208,10 +211,8 @@ void ir_toggle()
 void ir_start(uint16_t *code)
 {
   ir_code = code;
-  // IR_PORT &= ~IR_BV; // Turn output off (atmega328 only)
-  digitalWrite(3,LOW); // Turn output off
-  // IR_DDR |= IR_BV; // Set it as output (atmega328 only)
-  pinMode(3,OUTPUT); // Set it as output
+  IR_PORT &= ~IR_BV; // Turn output off
+  IR_DDR |= IR_BV; // Set it as output
   IR_TCCRnA = 0x00; // Reset the pwm
   IR_TCCRnB = 0x00;
   //printf_P(PSTR("FREQ CODE: %hd\r\n"), code[PRONTO_FREQ_CODE]);
